@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/hw4_js411_hacker_news_api/static/css/main.0db2dfee.css",
+    "main.js": "/hw4_js411_hacker_news_api/static/js/main.6b25b7c3.js",
+    "static/js/27.da98867f.chunk.js": "/hw4_js411_hacker_news_api/static/js/27.da98867f.chunk.js",
+    "index.html": "/hw4_js411_hacker_news_api/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.0db2dfee.css",
+    "static/js/main.6b25b7c3.js"
+  ]
+}
