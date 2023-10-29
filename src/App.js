@@ -29,7 +29,7 @@ function App() {
       : '';
     (async () => {
       const res = await axios.get(
-        `http://hn.algolia.com/api/v1/search${selectedBy}?${query}${selectedSearch}${selectedForConcat}&hitsPerPage=50`
+        `https://hn.algolia.com/api/v1/search${selectedBy}?${query}${selectedSearch}${selectedForConcat}&hitsPerPage=50`
       );
       setArticles(res.data.hits);
     })();
