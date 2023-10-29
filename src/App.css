@@ -223,18 +223,6 @@ svg {
   height: 25px;
 }
 
-select[name="selectedSearch"] {
-  width: 80px;
-}
-
-select[name="selectedBy"] {
-  width: 65px;
-}
-
-select[name="selectedFor"] {
-  width: 95px;
-}
-
 .SearchFilters_filters {
   display: flex;
   align-items: center;
