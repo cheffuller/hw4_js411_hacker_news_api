@@ -346,3 +346,15 @@ article {
   font-variant-numeric: normal;
   font-weight: 400;
 }
+
+.SearchFilters_meta svg {
+  width: 18px;
+  color: #9d9d9d;
+  margin-left: 8px;
+}
+
+.SocialShare {
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+}

@@ -5,7 +5,6 @@ import SearchHeader from './SearchHeader';
 import SearchFilters from './SearchFilters';
 import Article from './Article';
 import TimeAgo from 'javascript-time-ago';
-
 import en from 'javascript-time-ago/locale/en.json';
 
 TimeAgo.addDefaultLocale(en);
@@ -32,7 +31,6 @@ function App() {
       const res = await axios.get(
         `http://hn.algolia.com/api/v1/search${selectedBy}?${query}${selectedSearch}${selectedForConcat}&hitsPerPage=50`
       );
-      console.log(res);
       setArticles(res.data.hits);
     })();
   }, [searchQuery, selectedSearch, selectedBy, selectedFor]);

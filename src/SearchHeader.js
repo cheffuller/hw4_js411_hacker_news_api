@@ -4,7 +4,7 @@ function SearchHeader({ props }) {
         <div className='SearchHeader_search'>
           <span className='SearchHeader_logo'>
             <a href='https://news.ycombinator.com'>
-              <img src='https://hn.algolia.com/public/899d76bbc312122ee66aaaff7f933d13.png' />
+              <img src='https://hn.algolia.com/public/899d76bbc312122ee66aaaff7f933d13.png' alt="logo"/>
             </a>
             <a href='https://hn.algolia.com/'>
               <div className='SearchHeader_label'>
@@ -43,6 +43,7 @@ function SearchHeader({ props }) {
                 href='https://www.algolia.com/developers/?utm_source=hackernews&utm_medium=referral'
                 title='Realtime Search Engine'
                 target='_blank'
+                rel="noreferrer"
               >
                 <img
                   src='https://hn.algolia.com/public/38a9c67b12016b52267071c530ff2e78.svg'
