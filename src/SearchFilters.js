@@ -1,4 +1,8 @@
-function SearchFilters() {
+import SelectedSearch from "./SelectedSearch";
+import SelectedBy from "./SelectedBy";
+import SelectedFor from "./SelectedFor";
+
+function SearchFilters({props}) {
   return (
     <div className='SearchFilters container'>
       <button className='SearchFilters_menuButton'>
@@ -21,120 +25,15 @@ function SearchFilters() {
       <div className='SearchFilters_filters'>
         <span className='SearchFilters_filterContainer'>
           <span className='SearchFilters_text'>Search</span>
-          <div
-            className='Dropdown'
-            role='combobox'
-            aria-expanded='false'
-            aria-haspopup='listbox'
-            aria-labelledby='downshift-0-label'
-          >
-            <label
-              htmlFor='downshift-0-input'
-              id='downshift-0-label'
-              tabIndex='0'
-              className='Dropdown_label'
-            >
-              Stories
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='24'
-                height='24'
-                viewBox='0 0 24 24'
-                fill='none'
-                stroke='currentColor'
-                strokeWidth='2'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-              >
-                <polyline points='6 9 12 15 18 9'></polyline>
-              </svg>
-            </label>
-            <ul
-              className='Dropdown_list'
-              role='listbox'
-              aria-labelledby='downshift-0-label'
-              id='downshift-0-menu'
-            //   style='position: absolute;'
-            ></ul>
-          </div>
+          <SelectedSearch props={{ ...props }}></SelectedSearch>
         </span>
         <span className='SearchFilters_filterContainer'>
           <span className='SearchFilters_text'>by</span>
-          <div
-            className='Dropdown'
-            role='combobox'
-            aria-expanded='false'
-            aria-haspopup='listbox'
-            aria-labelledby='downshift-1-label'
-          >
-            <label
-              htmlFor='downshift-1-input'
-              id='downshift-1-label'
-              tabIndex='0'
-              className='Dropdown_label'
-            >
-              Date{' '}
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='24'
-                height='24'
-                viewBox='0 0 24 24'
-                fill='none'
-                stroke='currentColor'
-                strokeWidth='2'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-              >
-                <polyline points='6 9 12 15 18 9'></polyline>
-              </svg>
-            </label>
-            {/* <ul
-              className='Dropdown_list'
-              role='listbox'
-              aria-labelledby='downshift-1-label'
-              id='downshift-1-menu'
-              style='position: absolute;'
-            ></ul> */}
-          </div>
+          <SelectedBy props={{ ...props }}></SelectedBy>
         </span>
         <span className='SearchFilters_filterContainer'>
-          <span className='SearchFilters_text'>htmlFor</span>
-          <div
-            className='Dropdown'
-            role='combobox'
-            aria-expanded='false'
-            aria-haspopup='listbox'
-            aria-labelledby='downshift-2-label'
-          >
-            <label
-              htmlFor='downshift-2-input'
-              id='downshift-2-label'
-              tabIndex='0'
-              className='Dropdown_label'
-            >
-              Last 24h{' '}
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='24'
-                height='24'
-                viewBox='0 0 24 24'
-                fill='none'
-                stroke='currentColor'
-                strokeWidth='2'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-              >
-                <polyline points='6 9 12 15 18 9'></polyline>
-              </svg>
-            </label>
-            {/* <ul
-              className='Dropdown_list'
-              role='listbox'
-              aria-labelledby='downshift-2-label'
-              id='downshift-2-menu'
-              style='position: absolute;'
-            ></ul> */}
-          </div>
+          <span className='SearchFilters_text'>for</span>
+          <SelectedFor props={{ ...props }}></SelectedFor>
         </span>
       </div>
       <div className='SearchFilters_meta'>
@@ -142,7 +41,7 @@ function SearchFilters() {
           0 results (0.002 seconds)
         </p>
         <div className='SocialShare'>
-          <div
+          {/* <div
             className='Dropdown'
             role='combobox'
             aria-expanded='false'
@@ -154,7 +53,7 @@ function SearchFilters() {
               id='downshift-3-label'
               tabIndex='0'
               className='Dropdown_label'
-            >
+            > */}
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -185,15 +84,15 @@ function SearchFilters() {
               >
                 <polyline points='6 9 12 15 18 9'></polyline>
               </svg>
-            </label>
-            {/* <ul
+            {/* </label>
+             <ul
               className='Dropdown_list'
               role='listbox'
               aria-labelledby='downshift-3-label'
               id='downshift-3-menu'
               style='position: fixed; left: 1409.65px; top: 92.5px; z-index: 50;'
-            ></ul> */}
-          </div>
+            ></ul>
+          </div> */}
         </div>
       </div>
     </div>

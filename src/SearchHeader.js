@@ -1,4 +1,4 @@
-function SearchHeader({ updateArticles }) {
+function SearchHeader({ props }) {
     return (
         <header className='SearchHeader container'>
         <div className='SearchHeader_search'>
@@ -33,7 +33,7 @@ function SearchHeader({ updateArticles }) {
             </span>
             <input
               type='search'
-              onChange={updateArticles}
+              onChange={(e) => props.setSearchQuery(e.target.value)}
               placeholder='Search stories by title, url or author'
               className='SearchInput'
             />
